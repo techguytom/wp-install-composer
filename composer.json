@@ -1,0 +1,49 @@
+{
+    "name": "techguytom/wp-install-composer",
+    "description": "WordPress build composer install",
+    "license": "GPLv2",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "3.8",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/3.8.zip"
+                },
+                "require" : {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "wordpress": "3.8",
+        "fancyguy/webroot-installer": "1.0.0",
+        "wpackagist-theme/twentyfourteen": "*",
+        "incenteev/composer-parameter-handler": "~2.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+    },
+    "extra": {
+        "webroot-dir": "wp",
+        "webroot-package": "wordpress",
+        "incenteev-parameters": {
+            "file": "config/parameters.yml"
+        }
+    }
+}

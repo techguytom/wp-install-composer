@@ -1,0 +1,16 @@
+parameters:
+    database_name:      database
+    database_username:  username
+    database_password:  password
+    database_host:      localhost
+    database_prefix:    ndrwp
+
+    site_url:           nerd.dev
+
+    name:               ~
+    email:              ~
+    environment:        sandbox
+
+    content_folder:     wp-content
+    core_folder:        wp
+
