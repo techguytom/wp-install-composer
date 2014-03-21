@@ -1,0 +1,19 @@
+parameters:
+    environment:               dev|prod
+    database_name:             database
+    database_user:             user
+    database_password:         password
+    database_host:             localhost
+    database_prefix:           nrdwp_
+    database_character_set:    utf8
+    database_collation:        ~
+    content_directory:         wp-content
+    wordpress_directory:       wp
+    wordpress_locale:          en_US
+    wordpress_admin_user:      nerdadmin
+    wordpress_admin_email:     nerd@host.com
+    wordpress_admin_password:  458Xu9wqR
+    wordpress_site_title:      Test Site
+    wordpress_site_url:        http://nerd.dev
+    wordpress_upload_path:     /vweb/nerdpress.nerderylabs.com/docs/public/content/uploads
+    wordpress_upload_url:      http://nerdpress.nerderylabs.com/content/uploads

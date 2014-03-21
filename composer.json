@@ -43,7 +43,7 @@
         "webroot-dir": "wp",
         "webroot-package": "wordpress",
         "incenteev-parameters": {
-            "file": "config/config.yml"
+            "file": "config/parameters.yml"
         }
     }
 }
