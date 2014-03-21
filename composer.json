@@ -9,6 +9,10 @@
             "url": "http://wpackagist.org"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/techguytom/cli-wordpress-installer"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "wordpress",
@@ -33,7 +37,8 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Tgt\\CliWordpressInstaller\\WpInstaller::processInstall"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
