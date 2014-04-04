@@ -33,12 +33,13 @@
         "wordpress": "3.8.1",
         "fancyguy/webroot-installer": "1.0.0",
         "wpackagist-theme/twentyfourteen": "*",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "techguytom/cli-wordpress-installer": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Tgt\\CliWordpressInstaller\\InstallerHandler::processInstall"
+            "Techguytom\\CliWordpressInstaller\\InstallHandler::cliInstall"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
