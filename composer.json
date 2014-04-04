@@ -38,7 +38,7 @@
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Tgt\\CliWordpressInstaller\\WpInstaller::processInstall"
+            "Tgt\\CliWordpressInstaller\\InstallerHandler::processInstall"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
