@@ -4,3 +4,4 @@ wp-content/plugins
 wp-content/uploads
 .DS_Store
 composer.lock
+vendor
