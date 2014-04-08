@@ -10,3 +10,4 @@ parameters:
     content_directory:         wp-content
     wordpress_directory:       wp
     wordpress_locale:          en_US
+    wordpress_site_url:        http://nerd.dev
