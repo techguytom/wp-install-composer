@@ -1,8 +1,8 @@
 parameters:
-    environment:               dev|prod
-    database_name:             database
-    database_user:             user
-    database_password:         password
+    environment:               dev
+    database_name:             wp_test
+    database_user:             root
+    database_password:         ~
     database_host:             localhost
     database_prefix:           nrdwp_
     database_character_set:    utf8
@@ -10,4 +10,4 @@ parameters:
     content_directory:         wp-content
     wordpress_directory:       wp
     wordpress_locale:          en_US
-    wordpress_site_url:        http://nerd.dev
+    wordpress_site_url:        http://localhost
